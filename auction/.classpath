@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="com.genuitec.eclipse.j2eedt.core.J2EE14_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/RXTXcomm.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/SZHTOGsm.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/activation.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/antlr-2.7.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/aopalliance.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/c3p0-0.9.0.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/commons-beanutils.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/commons-collections.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/commons-digester.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/commons-logging.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/commons-validator.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/dom4j-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/ehcache-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/freemarker-2.3.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/hibernate3.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/jakarta-oro.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/jstl.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/jta.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/junit.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/log4j-1.2.13.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/mail.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java-3.1.10-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/ognl-2.6.11.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/pull-parser-2.1.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/saaj.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/sitemesh-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/spring-mock.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/spring.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/sqljdbc.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/standard.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/struts2-core-2.0.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/struts2-sitemesh-plugin-2.0.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/struts2-spring-plugin-2.0.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/xwork-2.0.3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/javax.servlet.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

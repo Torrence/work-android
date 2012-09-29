@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="HTTP通信例子，欢迎使用!" />
+	<Button android:text="直接获取数据" android:id="@+id/button1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+	<Button android:text="以GET方式请求数据" android:id="@+id/button2"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+	<Button android:text="以POST方式请求数据" android:id="@+id/button3"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+</LinearLayout>

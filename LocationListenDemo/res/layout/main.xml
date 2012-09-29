@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content" 
+android:scrollbars="none">
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+        
+        <Button
+        android:id="@+id/btnOpenListen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启监听" />
+  
+    	<Button
+        android:id="@+id/btnCloseListen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭监听" />
+ 
+    	<TextView
+        android:id="@+id/textViewListenState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close" />
+        
+    </LinearLayout>
+    
+   	<TextView
+       android:id="@+id/GPSChangeLocation"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Locaton-->" />
+    
+   	
+   	
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+        
+        <Button
+        android:id="@+id/btnGetLocationByGps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="根据GPS获取经纬度" />
+         
+       
+        
+    	<TextView
+        android:id="@+id/GPSNewLocaton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />         
+    </LinearLayout>
+    
+     <Button
+       android:id="@+id/btnClear"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="清除" />
+     
+     <TextView
+       android:id="@+id/NetworkChangeLocation"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Locaton-->" />
+      
+       <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+        
+        <Button
+        android:id="@+id/btnGetLocationByNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="根据网络获取经纬度" />
+         
+       
+        
+    	<TextView
+        android:id="@+id/NetworkNewLocaton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />         
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

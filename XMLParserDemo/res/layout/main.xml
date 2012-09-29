@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/hello" />
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="300px" android:scrollbarStyle="outsideOverlay">
+		<EditText android:editable="false" android:layout_width="fill_parent"
+			android:id="@+id/editText1" android:layout_height="wrap_content"
+			android:text=""></EditText>
+	</ScrollView>
+	<Button android:text="通过DOM解析" android:id="@+id/button1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+	<Button android:text="通过SAX解析" android:id="@+id/button2"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+</LinearLayout>

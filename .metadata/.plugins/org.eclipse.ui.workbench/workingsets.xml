@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1346721373666_0" label="Android课程设计" name="Android课程设计">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/WeatherReporter" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Dictionary" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ball" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MobileBusiness" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AuctionClient" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Snake" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/BombKiller" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/fzAndroidMap" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1346721391953_1" label="Android应用开发实验" name="Android应用开发实验">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/VoiceDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ActivityDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ListViewDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HelloWorld" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/XMLParserDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/LifeCycleDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FileOpen" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MapDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SQLiteOpenHelperExamply" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/LayoutDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ViewerDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ContentProvider" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SQLiteDatabaseExample" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/WidgetsDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HttpDemo" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1348883743981_9" label="底层实验" name="底层实验">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FileStoreDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JniDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SharedPreferencesDemo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mySensor" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1346721467032_2" label="Window Working Set" name="Aggregate for window 1346721467031"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1346811782617_3" label="Window Working Set" name="Aggregate for window 1346811782617"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1346987113472_4" label="Window Working Set" name="Aggregate for window 1346987113472"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1346997714178_5" label="Window Working Set" name="Aggregate for window 1346997714177"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1347262680211_6" label="Window Working Set" name="Aggregate for window 1347262680211"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1348447006886_7" label="Window Working Set" name="Aggregate for window 1348447006886"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1348883713367_8" label="Window Working Set" name="Aggregate for window 1348883713367"/>
+<mruList name="底层实验"/>
+<mruList name="Android应用开发实验"/>
+<mruList name="Android课程设计"/>
+</workingSetManager>

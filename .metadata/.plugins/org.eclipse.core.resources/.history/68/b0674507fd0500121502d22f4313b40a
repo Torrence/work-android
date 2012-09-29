@@ -1,0 +1,31 @@
+package com.contentProvider.activity;
+
+import android.app.Activity;
+import android.content.ContentValues;
+import android.os.Bundle;
+import android.view.Menu;
+
+public class ContentProviderActivity extends Activity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        /*插入数据*/
+        ContentValues values = new ContentValues();
+        values.put(NotePad.Notes.TITLE, "title1");
+        values.put(NotePad.Notes.NOTE, "NOTENOTE1");
+        getContentResolver().insert(NotePad.Notes.CONTENT_URI, values);
+        values.clear();
+        values.put(NotePad.Notes.TITLE, "title2");
+        values.put(NotePad.Notes.NOTE, "NOTENOTE2");
+        getContentResolver().insert(NotePad.Notes.CONTENT_URI, values);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+}

@@ -1,0 +1,61 @@
+package com.Addressbook.activity;
+
+import java.util.List;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+
+public class otherPersonService implements IPersonService{
+	private DatabaseHelper databaseHelper;
+	private Context context;
+	
+	public otherPersonService(Context context) {
+		this.context = context;
+		databaseHelper = new DatabaseHelper(context);
+	}
+
+	@Override
+	public void save(Person person) {
+		// TODO Auto-generated method stub
+		SQLiteDatabase database = databaseHelper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put("name", person.getName());
+		values.put("age", person.getAge());
+		database.insert("person", "name", values);
+	}
+
+	@Override
+	public void update(Person person) {
+		// TODO Auto-generated method stub
+		SQLiteDatabase database = databaseHelper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put("name", person.getName());
+		values.put("age", person.getAge());
+	}
+
+	@Override
+	public Person find(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Person> getScrollData(int firstResult, int maxResult) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public long getCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

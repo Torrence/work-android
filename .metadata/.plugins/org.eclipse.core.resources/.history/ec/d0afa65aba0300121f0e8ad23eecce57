@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名：" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/nameeditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄：" />
+
+        <EditText
+            android:id="@+id/ageeditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/addbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加：" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入选择的ID:" ></TextVie>
+
+            <EditTextandroid:id
+                id=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                selecteditText=""
+                android:numeric="integer" >
+
+                <EditText>
+                </EditText>
+
+                <LinearLayout>
+                </LinearLayout>
+
+                <LinearLayoutandroid:layout_width
+                    android:id="@+id/linearLayout5"
+                    android:layout_height="wrap_content"
+                    match_parent="" >
+
+                    <Buttonandroid:text
+                        android:id="@+id/selectbut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        查找="" >
+
+                        <Button>
+                        </Button>
+
+                        <Buttonandroid:layout_height
+                            android:id="@+id/delbut"
+                            android:layout_width="wrap_content"
+                            wrap_content=""
+                            android:text="删除查询"
+                            android:visibility="invisible" >
+
+                            <Button>
+                            </Button>
+
+                            <LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout>
+                            </LinearLayout>

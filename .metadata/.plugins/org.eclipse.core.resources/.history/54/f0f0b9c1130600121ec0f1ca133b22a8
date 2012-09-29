@@ -1,0 +1,50 @@
+package com.fileopen.activity;
+
+import java.io.File;
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class FileReadActivity extends Activity {
+	private static final String _DirRoot = "/";
+	private static final String _SDCARD = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
+	private final String _BACK_TO_ROOT = "Back To /";
+	public static final String _TAG = "TAG";
+	String _currPath;
+	ListView lv;
+	ArrayList<String> arrl = new ArrayList<String>();
+	ArrayAdapter<String> aa;
+	TextView tv;
+	Context ct;
+	public OnItemClickListener _itemClickListener;
+	
+	/** Called when the activity is first created. */
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.file);
+		lv = (ListView) findViewById(R.id.ListView01);
+		tv = (TextView) findViewById(R.id.tv);
+		ct = this;
+		getDir(new File(_SDCARD));
+		_itemClickListener = new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.Addressbook.activity;
+
+public interface IPersonService {
+	public void save(Person)
+}

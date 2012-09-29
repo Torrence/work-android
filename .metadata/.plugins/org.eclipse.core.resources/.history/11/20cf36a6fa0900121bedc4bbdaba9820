@@ -1,0 +1,27 @@
+package com.example.filestoredemo;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class FileStoreDemoActivity extends Activity {
+	EditText mEdit;
+	Button mSave;
+	Button mRead;
+	TextView mTextView;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_file_store_demo);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_file_store_demo, menu);
+        return true;
+    }
+}

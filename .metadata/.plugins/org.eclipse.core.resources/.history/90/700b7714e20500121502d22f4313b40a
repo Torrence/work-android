@@ -1,0 +1,32 @@
+package com.bob.sqlitedatabaseexample;
+
+import android.app.Activity;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.Menu;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class SQLiteDatabaseExampleActivity extends Activity {
+
+	EditText nameEditText;
+	EditText ageEditText;
+	EditText selectEditText;
+	Button addButton;
+	Button selectButton;
+	Button delButton;
+	SQLiteDatabase database;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mail, menu);
+        return true;
+    }
+}

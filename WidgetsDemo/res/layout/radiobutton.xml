@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView 
+		android:text="Give the choice!" 
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+	/>
+	<RadioGroup 
+		android:id="@+id/radiogroup01"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+	>
+		<RadioButton 
+			android:text="A" 
+			android:id="@+id/radioButton1"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+		/>
+		<RadioButton 
+			android:text="B" 
+			android:id="@+id/radioButton2"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+		/>
+		<RadioButton 
+			android:text="C" 
+			android:id="@+id/radioButton3"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+		/>
+		<RadioButton 
+			android:text="D" 
+			android:id="@+id/radioButton4"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+		/>
+	</RadioGroup>
+</LinearLayout>

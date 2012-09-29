@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.led.activity" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="7" />
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".IndexActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".TextViewDemo" android:label="TextView示例" />
+		<activity android:name=".ButtonDemo" android:label="Button示例" />
+		<activity android:name=".EditTextDemo" android:label="EditText示例" />
+		<activity android:name=".RadioButtonDemo" android:label="RadioButton示例" />
+		<activity android:name=".CheckBoxDemo" android:label="CheckBox示例" />
+		<activity android:name=".SpinnerDemo" android:label="Spinner示例" />
+	</application>
+</manifest>

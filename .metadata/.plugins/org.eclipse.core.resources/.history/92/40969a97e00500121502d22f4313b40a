@@ -1,0 +1,20 @@
+package com.bob.sqlitedatabaseexample;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class SQLiteDatabaseExampleActivity extends Activity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.mail);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mail, menu);
+        return true;
+    }
+}

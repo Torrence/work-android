@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="msg">城市 :</string>
+<string name="app_name">天气预报</string>
+<string name="inputstr">请选择城市的名字：</string>
+<string name="OK">确定</string>
+<color name="blue">#2A99FB</color>
+<color name="black">#000000</color>
+<color name="silver">#C0C0C0</color>
+</resources>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="cwq-android" extends="struts-default">
+        <action name="androidLogin" class="com.cwq.action.android.UserAction" method="login">
+        </action>
+        <action name="androidViewKinds" class="com.cwq.action.android.ItemAction" method="viewKinds">
+        </action>
+        <action name="androidViewItems" class="com.cwq.action.android.ItemAction" method="viewItemsByKind">
+        </action>
+        <action name="androidViewOne" class="com.cwq.action.android.ItemAction" method="viewItemById">
+        </action>
+		<action name="androidAddItem" class="com.cwq.action.android.ItemAction" method="addItem">
+        </action>
+        <action name="androidBid" class="com.cwq.action.android.BidAction" method="addBid">
+        </action>
+    </package>
+</struts>

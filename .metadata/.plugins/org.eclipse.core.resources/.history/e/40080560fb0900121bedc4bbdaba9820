@@ -1,0 +1,53 @@
+package com.example.filestoredemo;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.Menu;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class FileStoreDemoActivity extends Activity {
+	EditText mEdit;
+	Button mSave;
+	Button mRead;
+	TextView mTextView;
+	String fn = "myandroid.log";
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_file_store_demo);
+        mEdit = (EditText) findViewById(R.id.editbox);
+        mSave = (Button) findViewById(R.id.save);
+        mRead = (Button) findViewById(R.id.read);
+        mTextView = (TextView) findViewById(R.id.file);
+    }
+    
+    void save() {
+    	try {
+    		FileOutputStream fos = this.openFileOutput(fn, Context.MODE_PRIVATE);
+    		fos.write(mEdit.getText().toString().getBytes());
+    		fos.close();
+    		Toast.makeText(FileStoreDemoActivity.this, "Saved", Toast.LENGTH_SHORT).show();
+    	}
+    	catch (FileNotFoundException e) {
+    		return;
+    	}
+    	catch (IOException e) {
+    		return;
+    	}
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_file_store_demo, menu);
+        return true;
+    }
+}

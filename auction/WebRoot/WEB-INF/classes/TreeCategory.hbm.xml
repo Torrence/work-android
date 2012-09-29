@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.cwq.model">
+	<class	name="TreeCategory"	table="tree_category">
+		<id	name="category_id"	type="integer"	column="category_id">
+			<generator class="identity"/>
+		</id>
+
+		<property name="parent_id" column="parent_id" type="integer"  length="11"/>
+
+		<property name="level" column="level" type="integer" length="6"/>
+		
+		<property name="is_leaf" column="is_leaf" type="integer" length="1"/>
+
+	    <property name="category_title" column="category_title" type="string" length="100"/>
+	    
+	    <property name="category_name" column="category_name" type="string" length="100"/>
+	    
+	    <property name="category_code" column="category_code" type="string" length="100"/>
+	    
+	    <property name="category_type" column="category_type" type="string" length="30"/>
+	    
+	    <property name="image" column="image" type="string" length="255"/>
+	    
+	    <property name="status" column="status" type="string" length="20"/>
+	    
+	    <property name="creator" column="creator" type="string" length="50"/>
+	    
+	    <property name="create_date" column="create_date" type="date" length="10"/>
+	    
+	    <property name="modify_user" column="modify_user" type="string" length="50"/>
+	    
+	    <property name="modify_date" column="modify_date" type="date" length="10"/>
+	    
+	     <property name="description" column="description" type="date" length="10"/>
+
+
+	</class>	
+</hibernate-mapping>

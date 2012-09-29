@@ -1,0 +1,13 @@
+package com.Addressbook.activity;
+
+import android.content.Context;
+
+public class PersonService {
+	private DatabaseHelper databaseHelper;
+	private Context context;
+	
+	public PersonService(Context context) {
+		this.context = context;
+		databaseHelper = new DatabaseHelper(context);
+	}
+}

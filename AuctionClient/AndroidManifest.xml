@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.led.auction" android:versionCode="1" android:versionName="1.0">
+	<application android:icon="@drawable/launch_icon"
+		android:label="@string/app_name">
+		<activity android:name=".Login" android:label="@string/app_name"
+			android:launchMode="singleInstance">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="MainActivity"></activity>
+		<activity android:name="KindList"></activity>
+		<activity android:name="ItemList"></activity>
+		<activity android:name="ViewItem"></activity>
+		<activity android:name="AddItem"></activity>
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TableRow>
+			<TextView android:text="@string/keyword" android:textStyle="bold"
+				android:padding="3dip" />
+			<EditText android:id="@+id/keyword" android:layout_weight="1"
+				android:text="" android:padding="3dip" android:scrollHorizontally="false" />
+			<Button android:text="@string/btnSearch" android:id="@+id/searchall"
+				android:padding="3dip" />
+		</TableRow>
+		<ListView android:id="@+id/listProducts"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></ListView>
+		<Button android:text="@string/btnBack" android:id="@+id/back03"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</TableLayout>
+</LinearLayout>

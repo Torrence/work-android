@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">MyMap</string>
+    <string name="hello_world">Baidu Map demo</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="show_satellite">显示卫星地图</string>
+    <string name="hide_satellite">隐藏卫星地图</string>
+    <string name="show_traffic">显示实时交通信息</string>
+    <string name="hide_traffic">隐藏实时交通信息</string>
+    <string name="my_location">我的位置</string>
+    <string name="location">实时定位</string>
+    <string name="rm_location">取消定位</string>
+    <string name="search_text">输入要搜索的地点</string>
+    <string name="search_btn">搜索</string>
+    <string name="search_close">关闭搜索</string>
+    <string name="show_search">搜索地点</string>
+    <string name="show_search_transit">搜索线路</string>
+    
+    <string name="baidumap_key">C460A6775E5BD67B4A31ABC7CFE8D83A0D8EB5D6</string>
+    
+    <string name="permission_error">授权验证错误</string>
+    <string name="network_error">网络错误</string>
+    
+    <string name="wait_for_location">定位中，请稍后</string>
+    
+    <string name="search_noresult">抱歉，未找到结果</string>
+
+</resources>

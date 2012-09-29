@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <TableRow>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/productid"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/productid"
+                    android:layout_weight="1"
+                    android:padding="3dip"
+                    android:scrollHorizontally="false"
+                    android:text="" />
+                <Button
+                    android:id="@+id/searchone"
+                    android:padding="3dip"
+                    android:text="@string/btnSearch" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/productname"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/productname"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:padding="3dip"
+                    android:scrollHorizontally="false"
+                    android:text="" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/description"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:padding="3dip"
+                    android:scrollHorizontally="false"
+                    android:text="" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/price"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:padding="3dip"
+                    android:scrollHorizontally="false"
+                    android:text="" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/productarea"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/productarea"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:padding="3dip"
+                    android:scrollHorizontally="false"
+                    android:text="" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/type"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/type"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:padding="3dip"
+                    android:scrollHorizontally="false"
+                    android:text="" />
+            </TableRow>
+            <TableRow android:gravity="right" >
+                <TextView
+                    android:padding="3dip"
+                    android:text=""
+                    android:visibility="invisible" />
+                <Button
+                    android:id="@+id/back01"
+                    android:layout_weight="1"
+                    android:padding="3dip"
+                    android:text="@string/btnBack" />
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_weight="1"
+                    android:padding="3dip"
+                    android:text="@string/btnLogout" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

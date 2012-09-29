@@ -1,0 +1,24 @@
+package com.contentProvider.activity;
+
+import android.app.Activity;
+import android.content.ContentValues;
+import android.os.Bundle;
+import android.view.Menu;
+
+public class ContentProviderActivity extends Activity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        /*插入数据*/
+        ContentValues values = new ContentValues();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+}

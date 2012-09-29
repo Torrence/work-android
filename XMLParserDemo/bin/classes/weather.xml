@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weather>
+	<current_conditions>
+		<condition data="天气：小雨" />
+		<temp_c data="温度：22℃" />
+		<humidity data="湿度：94%" />
+		<wind_condition data="风向：北、风速：4 米/秒" />
+	</current_conditions>
+</weather>

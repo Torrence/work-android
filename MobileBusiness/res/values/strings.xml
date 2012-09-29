@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">httpSample</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="btnLogin">登录</string>
+    <string name="btnCancel">取消</string>
+    <string name="ttlLogin">登录框</string>
+    <string name="productid">商品编号</string>
+    <string name="btnSearch">查询</string>
+    <string name="btnLogout">注销</string>
+    <string name="productname">名称</string>
+    <string name="description">描述</string>
+    <string name="price">价格</string>
+    <string name="productarea">产地</string>
+    <string name="type">种类</string>
+    <string name="btnSearchOne">商品ID准确查询</string>
+    <string name="btnSearchAll">关键字模糊查询</string>
+    <string name="btnBack">返回</string>
+    <string name="keyword">关键字</string>
+</resources>
