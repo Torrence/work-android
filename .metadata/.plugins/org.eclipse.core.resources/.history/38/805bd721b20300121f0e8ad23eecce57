@@ -1,8 +1,0 @@
-package com.Addressbook.activity;
-
-import android.content.Context;
-
-public class PersonService {
-	private DatabaseHelper databaseHelper;
-	private Context context;
-}

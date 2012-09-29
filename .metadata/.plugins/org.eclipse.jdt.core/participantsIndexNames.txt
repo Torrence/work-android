@@ -1,9 +1,0 @@
-INDEX VERSION 1.126
-/home/liumeng/work/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2245949054.index
-/auction/src
-/home/liumeng/work/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3604873484.index
-/auction/src
-/home/liumeng/work/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/777508769.index
-/android-test-webpage/src
-/home/liumeng/work/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/27992354.index
-/auction/src

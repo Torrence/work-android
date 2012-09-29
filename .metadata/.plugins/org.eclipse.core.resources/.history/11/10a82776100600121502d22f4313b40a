@@ -1,8 +1,0 @@
-<resources>
-
-    <string name="app_name">文件资源管理器</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_file_open">FileOpenActivity</string>
-
-</resources>

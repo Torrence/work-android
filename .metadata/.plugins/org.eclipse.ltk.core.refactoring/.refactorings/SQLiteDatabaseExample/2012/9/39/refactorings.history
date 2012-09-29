@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;SQLiteDatabaseExample/res/layout/mail.xml&apos; to &apos;main.xml&apos;" description="Rename resource &apos;mail.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/mail.xml" name="main.xml" stamp="1348447243794" updateReferences="true"/>
-</session>

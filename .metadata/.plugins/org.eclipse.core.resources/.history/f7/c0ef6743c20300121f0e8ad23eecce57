@@ -1,5 +1,0 @@
-package com.Addressbook.activity;
-
-public class otherPersonService implements IPersonService{
-
-}
