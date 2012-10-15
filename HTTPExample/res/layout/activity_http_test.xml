@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HttpURLConnection方式"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnget1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GetMethod" />
+
+    <Button
+        android:id="@+id/btnpost1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PostMethod" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HttpClient方式"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnget2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GetMethod" />
+
+    <Button
+        android:id="@+id/btnpost2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PostMethod" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回的数据" />
+
+</LinearLayout>

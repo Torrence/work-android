@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:id="@+id/textview" />
+
+    <Button
+        android:id="@+id/insert1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插入方法1" />
+
+    <Button
+        android:id="@+id/insert2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插入方法2" />
+
+    <Button
+        android:id="@+id/delete1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除方法1" />
+
+    <Button
+        android:id="@+id/delete2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除方法2" />
+
+    <Button
+        android:id="@+id/update1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更新方法1" />
+
+    <Button
+        android:id="@+id/update2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更新方法2" />
+
+    <Button
+        android:id="@+id/query1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询方法1" />
+
+    <Button
+        android:id="@+id/query2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询方法2" />
+
+</LinearLayout>
