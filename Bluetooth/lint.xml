@@ -2,6 +2,7 @@
 <lint>
     <issue id="NewApi">
         <ignore path="src/com/ds/bluetooth/ClientActivity.java" />
+        <ignore path="src/com/ds/bluetooth/MainActivity.java" />
         <ignore path="src/com/ds/bluetoothUtil/BluetoothCommunThread.java" />
     </issue>
 </lint>

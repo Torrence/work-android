@@ -9,6 +9,12 @@
         android:layout_height="wrap_content"
         android:text="\r\n蓝牙测试程序\r\n" >
     </TextView>
+    
+    <Button 
+        android:id="@+id/startBluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动蓝牙设备"/>
 
     <Button
         android:id="@+id/startServerBtn"

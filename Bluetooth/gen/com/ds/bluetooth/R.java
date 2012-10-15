@@ -19,13 +19,14 @@ public final class R {
         public static final int clientSendMsgBtn=0x7f050004;
         public static final int devicelist=0x7f050001;
         public static final int listitem_textview=0x7f050005;
-        public static final int serverEditText=0x7f050009;
-        public static final int serverSendEditText=0x7f05000a;
-        public static final int serverSendMsgBtn=0x7f05000b;
-        public static final int serverStateText=0x7f050008;
-        public static final int startClientBtn=0x7f050007;
+        public static final int serverEditText=0x7f05000a;
+        public static final int serverSendEditText=0x7f05000b;
+        public static final int serverSendMsgBtn=0x7f05000c;
+        public static final int serverStateText=0x7f050009;
+        public static final int startBluetooth=0x7f050006;
+        public static final int startClientBtn=0x7f050008;
         public static final int startSearchBtn=0x7f050000;
-        public static final int startServerBtn=0x7f050006;
+        public static final int startServerBtn=0x7f050007;
     }
     public static final class layout {
         public static final int client=0x7f030000;
