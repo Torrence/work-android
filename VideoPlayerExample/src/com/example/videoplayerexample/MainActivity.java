@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
         videoView = (VideoView) this.findViewById(R.id.videoView);
         MediaController mc = new MediaController(this);
         videoView.setMediaController(mc);
-        videoView.setVideoPath("/sdcard/test.mp4");
+        videoView.setVideoPath("/sdcard/test-1080p.mp4");
         videoView.requestFocus();
         videoView.start();
     }

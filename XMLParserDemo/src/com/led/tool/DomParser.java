@@ -12,20 +12,20 @@ public class DomParser {
 			throws Exception {
 		InputStream temp = inputStream;
 		Map<String, Object> result = new HashMap<String, Object>();
-		// android¸øÎÒÃÇÌá¹©ÁËxml ÓÃÀ´µÃµ½xmlpull½âÎöÆ÷
+		// androidç»™æˆ‘ä»¬æä¾›äº†xml ç”¨æ¥å¾—åˆ°xmlpullè§£æžå™¨
 		XmlPullParser xmlpull = Xml.newPullParser();
-		// ½«ÊäÈëÁ÷´«Èë Éè¶¨±àÂë·½Ê½
+		// å°†è¾“å…¥æµä¼ å…¥ è®¾å®šç¼–ç æ–¹å¼
 		xmlpull.setInput(temp, "utf-8");
-		// pull¶Áµ½xmlºó ·µ»ØÊý×Ö ¶ÁÈ¡µ½xmlµÄÉùÃ÷·µ»ØÊý×Ö0 START_DOCUMENT; ¶ÁÈ¡µ½xmlµÄ½áÊø·µ»ØÊý×Ö1
-		// END_DOCUMENT ; ¶ÁÈ¡µ½xmlµÄ¿ªÊ¼±êÇ©·µ»ØÊý×Ö2 START_TAG ¶ÁÈ¡µ½xmlµÄ½áÊø±êÇ©·µ»ØÊý×Ö3 END_TAG
-		// ¶ÁÈ¡µ½xmlµÄÎÄ±¾·µ»ØÊý×Ö4 TEXT
+		// pullè¯»åˆ°xmlåŽ è¿”å›žæ•°å­— è¯»å–åˆ°xmlçš„å£°æ˜Žè¿”å›žæ•°å­—0 START_DOCUMENT; è¯»å–åˆ°xmlçš„ç»“æŸè¿”å›žæ•°å­—1
+		// END_DOCUMENT ; è¯»å–åˆ°xmlçš„å¼€å§‹æ ‡ç­¾è¿”å›žæ•°å­—2 START_TAG è¯»å–åˆ°xmlçš„ç»“æŸæ ‡ç­¾è¿”å›žæ•°å­—3 END_TAG
+		// è¯»å–åˆ°xmlçš„æ–‡æœ¬è¿”å›žæ•°å­—4 TEXT
 		int eventCode = xmlpull.getEventType();
-		// Ö»ÒªÕâ¸öÊÂ¼þ·µ»ØµÄ²»ÊÇ1 ÎÒÃÇ¾ÍÒ»Ö±¶ÁÈ¡xmlÎÄ¼þ
+		// åªè¦è¿™ä¸ªäº‹ä»¶è¿”å›žçš„ä¸æ˜¯1 æˆ‘ä»¬å°±ä¸€ç›´è¯»å–xmlæ–‡ä»¶
 		while (eventCode != XmlPullParser.END_DOCUMENT) {
 			switch (eventCode) {
 
 			case XmlPullParser.START_DOCUMENT: {
-				// ¿ªÊ¼ÎÄµµ
+				// å¼€å§‹æ–‡æ¡£
 				break;
 			}
 
@@ -46,12 +46,12 @@ public class DomParser {
 			}
 
 			case XmlPullParser.END_TAG: {
-				// ½áÊø±êÇ©
+				// ç»“æŸæ ‡ç­¾
 				break;
 			}
 			}
 
-			// Ã»ÓÐ½áÊøxmlÎÄ¼þ¾ÍÍÆµ½ÏÂ¸ö½øÐÐ½âÎö
+			// æ²¡æœ‰ç»“æŸxmlæ–‡ä»¶å°±æŽ¨åˆ°ä¸‹ä¸ªè¿›è¡Œè§£æž
 			eventCode = xmlpull.next();
 		}
 		return result;

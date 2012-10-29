@@ -11,27 +11,27 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class WeatherHandler extends DefaultHandler {
 
-	//ÓÃÓÚ´æ·Å½âÎö³öÀ´µÄÌìÆøĞÅÏ¢
+	//ç”¨äºå­˜æ”¾è§£æå‡ºæ¥çš„å¤©æ°”ä¿¡æ¯
 	Map<String, Object> result = new HashMap<String, Object>();
 
-	//»ñÈ¡ÌìÆøĞÅÏ¢
+	//è·å–å¤©æ°”ä¿¡æ¯
 	public Map<String, Object> getWeather() {
 		return result;
 	}
 	
-	//³õÊ¼»¯¹¤×÷
+	//åˆå§‹åŒ–å·¥ä½œ
 	public void startDocument() throws SAXException {
 		// TODO Auto-generated method stub
 		super.startDocument();
 	}
 	
-	//ÊÕÎ²µÄ´¦Àí¹¤×÷
+	//æ”¶å°¾çš„å¤„ç†å·¥ä½œ
 	public void endDocument() throws SAXException {
 		// TODO Auto-generated method stub
 		super.endDocument();
 	}
 
-	//³õÊ¼ÅĞ¶Ï
+	//åˆå§‹åˆ¤æ–­
 	public void startElement(String uri, String localName, String qName,
 			Attributes attributes) throws SAXException {
 		// TODO Auto-generated method stub
@@ -49,13 +49,13 @@ public class WeatherHandler extends DefaultHandler {
 		}
 	}
 	
-	//»ñÈ¡½ÚµãµÄ×Ö·ûÊı¾İ
+	//è·å–èŠ‚ç‚¹çš„å­—ç¬¦æ•°æ®
 	public void characters(char[] ch, int start, int length)
 			throws SAXException {
 		// TODO Auto-generated method stub
 	}
 
-	//½«Êı¾İĞ´ÈëÊı¾İ½á¹¹
+	//å°†æ•°æ®å†™å…¥æ•°æ®ç»“æ„
 	public void endElement(String uri, String localName, String qName)
 			throws SAXException {
 		// TODO Auto-generated method stub

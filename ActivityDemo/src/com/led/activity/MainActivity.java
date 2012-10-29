@@ -1,4 +1,4 @@
-package com.led.activity;
+ï»¿package com.led.activity;
 
 import android.app.Activity;
 import android.app.Application;
@@ -23,16 +23,16 @@ public class MainActivity extends Activity {
 	class MyClickListener implements OnClickListener {
 		@Override
 		public void onClick(View arg0) {
-			// //Éú³ÉIntent¶ÔÏó£¨°üº¬ÁËctivity¼ä´«µÄData£¬param£©;Ïàµ±ÓÚÒ»¸öÇëÇó
+			// //ç”ŸæˆIntentå¯¹è±¡ï¼ˆåŒ…å«äº†ctivityé—´ä¼ çš„Dataï¼Œparamï¼‰;ç›¸å½“äºä¸€ä¸ªè¯·æ±‚
 			// Intent intent=new Intent();
-			// //¼üÖµ¶Ô
+			// //é”®å€¼å¯¹
 			// intent.putExtra("extra", "HelloAndroid!This is ActivityDemo!");
-			// //´Ó´Ëactivity´«µ½ÁíÒ»Activity
+			// //ä»æ­¤activityä¼ åˆ°å¦ä¸€Activity
 			// intent.setClass(MainActivity.this, NextActivity.class);
-			// //Æô¶¯ÁíÒ»¸öActivity
+			// //å¯åŠ¨å¦ä¸€ä¸ªActivity
 			// startActivity(intent);
-			// Æô¶¯Android·¢¶ÌĞÅµÄActivity
-			// IntentÔÚÁ½Activity´«µİ£¬Activity¿É²»ÔÚÍ¬Ò»Ó¦ÓÃ³ÌĞòÏÂ
+			// å¯åŠ¨Androidå‘çŸ­ä¿¡çš„Activity
+			// Intentåœ¨ä¸¤Activityä¼ é€’ï¼ŒActivityå¯ä¸åœ¨åŒä¸€åº”ç”¨ç¨‹åºä¸‹
 			Uri uri = Uri.parse("smsto:1580046882*");
 			Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
 

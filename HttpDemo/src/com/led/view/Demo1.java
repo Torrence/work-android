@@ -18,42 +18,42 @@ public class Demo1 extends Activity {
 		setContentView(R.layout.demo1);
 
 		TextView mTextView = (TextView) this.findViewById(R.id.result);
-		// http µØÖ·
+		// http åœ°å€
 		String httpUrl = "http://www.baidu.com";
-		// »ñµÃµÄÊı¾İ
+		// è·å¾—çš„æ•°æ®
 		String resultData = "";
 		URL url = null;
 		try {
-			// ¹¹ÔìÒ»¸ö URL ¶ÔÏó
+			// æ„é€ ä¸€ä¸ª URL å¯¹è±¡
 			url = new URL(httpUrl);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
 		if (url != null) {
 			try {
-				// Ê¹ÓÃ HttpURLConnection ´ò¿ªÁ¬½Ó
+				// ä½¿ç”¨ HttpURLConnection æ‰“å¼€è¿æ¥
 				HttpURLConnection urlConn = (HttpURLConnection) url
 						.openConnection();
-				// µÃµ½¶ÁÈ¡µÄÄÚÈİ ( Á÷ )
+				// å¾—åˆ°è¯»å–çš„å†…å®¹ ( æµ )
 				InputStreamReader in = new InputStreamReader(
 						urlConn.getInputStream());
-				// ÎªÊä³ö´´½¨ BufferedReader
+				// ä¸ºè¾“å‡ºåˆ›å»º BufferedReader
 				BufferedReader buffer = new BufferedReader(in);
 				String inputLine = null;
-				// Ê¹ÓÃÑ­»·À´¶ÁÈ¡»ñµÃµÄÊı¾İ
+				// ä½¿ç”¨å¾ªç¯æ¥è¯»å–è·å¾—çš„æ•°æ®
 				while (((inputLine = buffer.readLine()) != null)) {
-					// ÎÒÃÇÔÚÃ¿Ò»ĞĞºóÃæ¼ÓÉÏÒ»¸ö "\n" À´»»ĞĞ
+					// æˆ‘ä»¬åœ¨æ¯ä¸€è¡Œåé¢åŠ ä¸Šä¸€ä¸ª "\n" æ¥æ¢è¡Œ
 					resultData += inputLine + "\n";
 				}
-				// ¹Ø±Õ InputStreamReader
+				// å…³é—­ InputStreamReader
 				in.close();
-				// ¹Ø±Õ http Á¬½Ó
+				// å…³é—­ http è¿æ¥
 				urlConn.disconnect();
-				// ÉèÖÃÏÔÊ¾È¡µÃµÄÄÚÈİ
+				// è®¾ç½®æ˜¾ç¤ºå–å¾—çš„å†…å®¹
 				if (!"".equals(resultData)) {
 					mTextView.setText(resultData);
 				} else {
-					mTextView.setText("¶ÁÈ¡µÄÄÚÈİÎª NULL");
+					mTextView.setText("è¯»å–çš„å†…å®¹ä¸º NULL");
 				}
 			} catch (IOException e) {
 				e.printStackTrace();

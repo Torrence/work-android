@@ -23,24 +23,24 @@ import android.widget.Toast;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 public class MainActivity extends MapActivity {
-	MapView mv; // ÉùÃ÷MapView¶ÔÏóÒıÓÃ
-	MapController controller; // ÉùÃ÷MapController¶ÔÏóÒıÓÃ
-	Bitmap bmpArrow; // ÉùÃ÷Bitmap¶ÔÏóÒıÓÃ
-	RadioButton rbNormal; // ÉùÃ÷RadioButton¶ÔÏóÒıÓÃ
+	MapView mv; // å£°æ˜MapViewå¯¹è±¡å¼•ç”¨
+	MapController controller; // å£°æ˜MapControllerå¯¹è±¡å¼•ç”¨
+	Bitmap bmpArrow; // å£°æ˜Bitmapå¯¹è±¡å¼•ç”¨
+	RadioButton rbNormal; // å£°æ˜RadioButtonå¯¹è±¡å¼•ç”¨
 	RadioButton rbSatellite;
 
 	@Override
-	protected void onCreate(Bundle icicle) { // ÖØĞ´onCreate·½·¨
+	protected void onCreate(Bundle icicle) { // é‡å†™onCreateæ–¹æ³•
 		super.onCreate(icicle);
 		setContentView(R.layout.main);
 		bmpArrow = BitmapFactory.decodeResource(getResources(),
 				R.drawable.arrow);
-		mv = (MapView) findViewById(R.id.mv); // »ñµÃMapView¶ÔÏó
-		controller = mv.getController(); // »ñµÃMapController¶ÔÏó
-		Button btnGo = (Button) findViewById(R.id.btnGo); // »ñµÃButton¶ÔÏó
-		mv.setBuiltInZoomControls(true); // ÉèÖÃÊÇ·ñÏÔÊ¾·Å´óËõĞ¡°´Å¥
+		mv = (MapView) findViewById(R.id.mv); // è·å¾—MapViewå¯¹è±¡
+		controller = mv.getController(); // è·å¾—MapControllerå¯¹è±¡
+		Button btnGo = (Button) findViewById(R.id.btnGo); // è·å¾—Buttonå¯¹è±¡
+		mv.setBuiltInZoomControls(true); // è®¾ç½®æ˜¯å¦æ˜¾ç¤ºæ”¾å¤§ç¼©å°æŒ‰é’®
 		mv.setStreetView(true);
-		//³õÊ¼»¯ÒÔÖĞ¹úÎªÖĞĞÄ
+		//åˆå§‹åŒ–ä»¥ä¸­å›½ä¸ºä¸­å¿ƒ
 		GeoPoint cityLocPoint = new GeoPoint((int) (28.70833 * 1E6),
 				(int) (104.35417 * 1E6));
 		controller.animateTo(cityLocPoint);
@@ -49,29 +49,29 @@ public class MainActivity extends MapActivity {
 		btnGo.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				EditText etLong = (EditText) findViewById(R.id.etLong); // »ñµÃEditText¶ÔÏó
-				EditText etLat = (EditText) findViewById(R.id.etLat); // »ñµÃEditText¶ÔÏó
-				String sLong = etLong.getEditableText().toString().trim(); // »ñµÃÊäÈëµÄ¾­¶È
-				String sLat = etLat.getEditableText().toString().trim(); // »ñµÃÊäÈëµÄÎ³¶È
-				if (sLong.equals("") || sLat.equals("")) { // ÅĞ¶ÏÊÇ·ñÊäÈë¿ÕÖµ
-					Toast.makeText(MainActivity.this, "¶Ô²»Æğ,ÇëÊäÈëÕıÈ·µÄ¾­Î³¶È×ø±ê!",
+				EditText etLong = (EditText) findViewById(R.id.etLong); // è·å¾—EditTextå¯¹è±¡
+				EditText etLat = (EditText) findViewById(R.id.etLat); // è·å¾—EditTextå¯¹è±¡
+				String sLong = etLong.getEditableText().toString().trim(); // è·å¾—è¾“å…¥çš„ç»åº¦
+				String sLat = etLat.getEditableText().toString().trim(); // è·å¾—è¾“å…¥çš„çº¬åº¦
+				if (sLong.equals("") || sLat.equals("")) { // åˆ¤æ–­æ˜¯å¦è¾“å…¥ç©ºå€¼
+					Toast.makeText(MainActivity.this, "å¯¹ä¸èµ·,è¯·è¾“å…¥æ­£ç¡®çš„ç»çº¬åº¦åæ ‡!",
 							Toast.LENGTH_LONG).show();
 					return;
 				}
 				updateMapView(Double.parseDouble(sLat),
-						Double.parseDouble(sLong)); // µ÷ÓÃ·½·¨¸üĞÂMapView
+						Double.parseDouble(sLong)); // è°ƒç”¨æ–¹æ³•æ›´æ–°MapView
 			}
 		});
-		RadioGroup rg = (RadioGroup) findViewById(R.id.rg); // »ñµÃRadioGroup¶ÔÏó
-		rbNormal = (RadioButton) findViewById(R.id.normal); // »ñµÃRadioButton¶ÔÏó
-		rbSatellite = (RadioButton) findViewById(R.id.satellite); // »ñµÃRadioButton¶ÔÏó
+		RadioGroup rg = (RadioGroup) findViewById(R.id.rg); // è·å¾—RadioGroupå¯¹è±¡
+		rbNormal = (RadioButton) findViewById(R.id.normal); // è·å¾—RadioButtonå¯¹è±¡
+		rbSatellite = (RadioButton) findViewById(R.id.satellite); // è·å¾—RadioButtonå¯¹è±¡
 
 		rg.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
-				if (checkedId == rbNormal.getId()) { // ÅĞ¶Ï°´ÏÂµÄÊÇ·ñÊÇÕı³£ÊÓÍ¼
+				if (checkedId == rbNormal.getId()) { // åˆ¤æ–­æŒ‰ä¸‹çš„æ˜¯å¦æ˜¯æ­£å¸¸è§†å›¾
 					mv.setSatellite(false);
-				} else if (checkedId == rbSatellite.getId()) { // ÅĞ¶Ï°´ÏÂµÄÊÇ·ñÎªÎÀĞÇÊÓÍ¼
+				} else if (checkedId == rbSatellite.getId()) { // åˆ¤æ–­æŒ‰ä¸‹çš„æ˜¯å¦ä¸ºå«æ˜Ÿè§†å›¾
 					mv.setSatellite(true);
 				}
 			}
@@ -79,18 +79,18 @@ public class MainActivity extends MapActivity {
 	}
 
 	@Override
-	protected boolean isRouteDisplayed() { // ÖØĞ´isRouteDisplayed·½·¨
+	protected boolean isRouteDisplayed() { // é‡å†™isRouteDisplayedæ–¹æ³•
 		return false;
 	}
 
-	// ·½·¨:¸üĞÂMapViewµÄÊÓÍ¼
+	// æ–¹æ³•:æ›´æ–°MapViewçš„è§†å›¾
 	public void updateMapView(double dLat, double dLong) {
 		GeoPoint gp = new GeoPoint((int) (dLat * 1E6), (int) (dLong * 1E6));
-		mv.displayZoomControls(true); // ÉèÖÃÏÔÊ¾·Å´óËõĞ¡°´Å¥
-		controller.animateTo(gp); // ½«µØÍ¼ÒÆ¶¯µ½Ö¸¶¨µÄµØÀíÎ»ÖÃ
+		mv.displayZoomControls(true); // è®¾ç½®æ˜¾ç¤ºæ”¾å¤§ç¼©å°æŒ‰é’®
+		controller.animateTo(gp); // å°†åœ°å›¾ç§»åŠ¨åˆ°æŒ‡å®šçš„åœ°ç†ä½ç½®
 		controller.setZoom(17);
-		List<Overlay> ol = mv.getOverlays(); // »ñµÃMapViewµÄ
+		List<Overlay> ol = mv.getOverlays(); // è·å¾—MapViewçš„
 		ol.clear();
-		ol.add(new ArrowOverLay(gp, bmpArrow)); // Ìí¼ÓÒ»¸öĞÂµÄOverlay
+		ol.add(new ArrowOverLay(gp, bmpArrow)); // æ·»åŠ ä¸€ä¸ªæ–°çš„Overlay
 	}
 }

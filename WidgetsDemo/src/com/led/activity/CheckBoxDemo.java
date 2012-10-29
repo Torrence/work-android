@@ -35,7 +35,7 @@ public class CheckBoxDemo extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if (_checkedIds == null || _checkedIds.isEmpty()) {
-					_lblResult.setText("ÄãÃ»ÓÐÑ¡ÔñÈÎºÎÏî");
+					_lblResult.setText("ä½ æ²¡æœ‰é€‰æ‹©ä»»ä½•é¡¹");
 				} else {
 					StringBuffer sb = new StringBuffer();
 					for (String id : _checkedIds) {

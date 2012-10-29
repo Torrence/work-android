@@ -17,14 +17,14 @@ public class ButtonDemo extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.button);
-		Toast toast = Toast.makeText(ButtonDemo.this, "»¶Ó­Ê¹ÓÃ°´Å¥Ê¾Àı£¡",
+		Toast toast = Toast.makeText(ButtonDemo.this, "æ¬¢è¿ä½¿ç”¨æŒ‰é’®ç¤ºä¾‹ï¼",
 				Toast.LENGTH_LONG);
 		toast.show();
 
 		_button1 = (Button) findViewById(R.id.button1);
 		_button2 = (Button) findViewById(R.id.button2);
-		_button1.setText("È·¶¨");
-		_button2.setText("·µ»Ø");
+		_button1.setText("ç¡®å®š");
+		_button2.setText("è¿”å›");
 		_button1.setWidth(200);
 		_button2.setWidth(100);
 		_button1.setTextColor(Color.RED);
@@ -38,7 +38,7 @@ public class ButtonDemo extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Toast toast = Toast.makeText(ButtonDemo.this,
-						"Äúµã»÷ÁË" + _button1.getText() + "°´Å¥£¡", Toast.LENGTH_LONG);
+						"æ‚¨ç‚¹å‡»äº†" + _button1.getText() + "æŒ‰é’®ï¼", Toast.LENGTH_LONG);
 				toast.setGravity(Gravity.TOP, 0, 200);
 				toast.show();
 			}

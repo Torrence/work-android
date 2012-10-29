@@ -15,7 +15,7 @@ public class TextViewDemo extends Activity {
 		setContentView(R.layout.textview);
 
 		textview = (TextView) findViewById(R.id.textView1);
-		String string="你好！欢迎使用文本示例！";
+		String string="浣犲ソ锛佹杩庝娇鐢ㄦ枃鏈ず渚嬶紒";
 		textview.setText(string);
 		textview.setTextColor(Color.RED);
 		textview.setTextSize(20);

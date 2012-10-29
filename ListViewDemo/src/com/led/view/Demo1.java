@@ -23,10 +23,10 @@ public class Demo1 extends Activity {
 
 	private List<String> getData() {
 		List<String> data = new ArrayList<String>();
-		data.add("²âÊÔÊı¾İ1");
-		data.add("²âÊÔÊı¾İ2");
-		data.add("²âÊÔÊı¾İ3");
-		data.add("²âÊÔÊı¾İ4");
+		data.add("æµ‹è¯•æ•°æ®1");
+		data.add("æµ‹è¯•æ•°æ®2");
+		data.add("æµ‹è¯•æ•°æ®3");
+		data.add("æµ‹è¯•æ•°æ®4");
 
 		return data;
 	}

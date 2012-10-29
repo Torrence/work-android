@@ -35,27 +35,27 @@ public class Demo4 extends ListActivity {
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("title", "Contacts");
-		map.put("info", "ÁªÏµÈË");
+		map.put("info", "è”ç³»äºº");
 		map.put("img", R.drawable.i1);
 		list.add(map);
 		map = new HashMap<String, Object>();
 		map.put("title", "Gallery");
-		map.put("info", "Í¼¿â");
+		map.put("info", "å›¾åº“");
 		map.put("img", R.drawable.i2);
 		list.add(map);
 		map = new HashMap<String, Object>();
 		map.put("title", "Gmail");
-		map.put("info", "ÓÊÏä");
+		map.put("info", "é‚®ç®±");
 		map.put("img", R.drawable.i3);
 		list.add(map);
 
 		return list;
 	}
 
-	// ListView ÖĞÄ³Ïî±»Ñ¡ÖĞºóµÄÂß¼­
+	// ListView ï¿½ï¿½Ä³ï¿½î±»Ñ¡ï¿½Ğºï¿½ï¿½ï¿½ß¼ï¿½
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
-		Toast toast = Toast.makeText(this, "Äãµã»÷ÁË"
+		Toast toast = Toast.makeText(this, "ä½ ç‚¹å‡»äº†"
 				+ (String) mData.get(position).get("title"), Toast.LENGTH_LONG);
 		toast.show();
 	}

@@ -23,17 +23,17 @@ public class Demo3 extends ListActivity {
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("title", "Contacts");
-		map.put("info", "ÁªÏµÈË");
+		map.put("info", "è”ç³»äºº");
 		map.put("img", R.drawable.i1);
 		list.add(map);
 		map = new HashMap<String, Object>();
 		map.put("title", "Gallery");
-		map.put("info", "Í¼¿â");
+		map.put("info", "å›¾åº“");
 		map.put("img", R.drawable.i2);
 		list.add(map);
 		map = new HashMap<String, Object>();
 		map.put("title", "Gmail");
-		map.put("info", "ÓÊÏä");
+		map.put("info", "é‚®ç®±");
 		map.put("img", R.drawable.i3);
 		list.add(map);
 

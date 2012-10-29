@@ -35,7 +35,7 @@ public class SpinnerDemo extends Activity {
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int position, long id) {
 				// TODO Auto-generated method stub
-				_textview1.setText("ÄãÑ¡ÔñµÄÑÕÉ«ÊÇ£º" + colors[position]);
+				_textview1.setText("ä½ é€‰æ‹©çš„é¢œè‰²æ˜¯ï¼š" + colors[position]);
 				parent.setVisibility(View.VISIBLE);
 			}
 

@@ -12,7 +12,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-//�� post ��ʽ�ϴ�����
+//以post方式上传参数
 public class Demo3 extends Activity {
 	/** Called when the activity is first created. */
 	@Override
@@ -20,64 +20,64 @@ public class Demo3 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.demo3);
 		TextView mTextView = (TextView) this.findViewById(R.id.resultPost);
-		// http ��ַ "?par=abcdefg" �������ϴ��Ĳ���
+		// http地址"?par=abcdefg"是我们上传的参数
 		String httpUrl = "http://192.168.1.150:8080/android-test-webpage/httpget.jsp";
-		// ��õ����
+		// 获得的数据
 		String resultData = "";
 		URL url = null;
 		try {
-			// ����һ�� URL ����
+			// 构造一个URL对象
 			url = new URL(httpUrl);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
 		if (url != null) {
 			try {
-				// ʹ�� HttpURLConnection ������
+				// 使用HttpURLConnection打开连接
 				HttpURLConnection urlConn = (HttpURLConnection) url
 						.openConnection();
-				// ��Ϊ����� post ���� , ������Ҫ����Ϊ true
+				// 因为这个是post请求，设立需要设置为true
 				urlConn.setDoOutput(true);
 				urlConn.setDoInput(true);
-				// ������ POST ��ʽ
+				// 设置以POST方式
 				urlConn.setRequestMethod("POST");
-				// Post ������ʹ�û���
+				// Post 请求不能使用缓存
 				urlConn.setUseCaches(false);
 				urlConn.setInstanceFollowRedirects(true);
-				// ���ñ������ӵ� Content-type ������Ϊ application/x-www-form-urlencoded ��
+				// 配置本次连接的Content-type，配置为application/x-www-form-urlencoded的
 				urlConn.setRequestProperty("Content-Type",
 						"application/x-www-form-urlencoded");
-				// ���ӣ��� postUrl.openConnection() ���˵����ñ���Ҫ�� connect ֮ǰ��ɣ�
-				// Ҫע����� connection.getOutputStream �������Ľ��� connect ��
+				// 连接，从postUrl.openConnection()至此的配置必须要在connect之前完成，
+				// 要注意的时connection.getOutputStream会隐含的进行connect。
 				urlConn.connect();
-				// DataOutputStream ��
+				// DataOutputStream 流
 				DataOutputStream out = new DataOutputStream(
 						urlConn.getOutputStream());
-				// Ҫ�ϴ��Ĳ���
+				// 要上传的参数
 				String content = "par="
 						+ URLEncoder.encode("ABCDEFG", "gb2312");
-				// ��Ҫ�ϴ�������д������
+				// 将要上传的内容写入流中
 				out.writeBytes(content);
-				// ˢ�¡��ر�
+				// 刷新、关闭
 				out.flush();
 				out.close();
-				// ��ȡ���
+				// 获取数据
 				BufferedReader reader = new BufferedReader(
 						new InputStreamReader(urlConn.getInputStream()));
 				String inputLine = null;
-				// ʹ��ѭ������ȡ��õ����
+				// 使用循环来读取获得的数据
 				while (((inputLine = reader.readLine()) != null)) {
-					// ������ÿһ�к������һ�� "\n" ������
+					// 我们在每一行后面加上一个"\n"来换行
 					resultData += inputLine + "\n";
 				}
 				reader.close();
-				// �ر� http ����
+				// 关闭http连接
 				urlConn.disconnect();
-				// ������ʾȡ�õ�����
+				// 设置显示取得的内容
 				if (!"".equals(resultData)) {
 					mTextView.setText(resultData);
 				} else {
-					mTextView.setText(" ��ȡ������Ϊ NULL");
+					mTextView.setText(" 读取的内容为 NULL");
 				}
 			} catch (IOException e) {
 				e.printStackTrace();

@@ -14,7 +14,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-//Ê¾Àı´úÂëÒıÓÃÓïÒôÊ¶±ğµÄÒâÍ¼µÄAPI. 
+//ç¤ºä¾‹ä»£ç å¼•ç”¨è¯­éŸ³è¯†åˆ«çš„æ„å›¾çš„API. 
 
 public class MainActivity extends Activity implements OnClickListener {
 
@@ -28,13 +28,13 @@ public class MainActivity extends Activity implements OnClickListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// ÃÇ´ÓËüµÄXMLµÄ³äÆøUI²¼ÖÃµÄÃèÊö
+		// ä»¬ä»å®ƒçš„XMLçš„å……æ°”UIå¸ƒç½®çš„æè¿°
 		setContentView(R.layout.main);
-		// ÎªÒÔºóµÃµ½µÄÕ¹Ê¾ÎïÆ·µÄÏà»¥×÷ÓÃ
+		// ä¸ºä»¥åå¾—åˆ°çš„å±•ç¤ºç‰©å“çš„ç›¸äº’ä½œç”¨
 		Button speakButton = (Button) findViewById(R.id.btn_speak);
 		mList = (ListView) findViewById(R.id.list);
 
-		// ¼ì²é¿´¿´ÊÇ·ñÈÏÊ¶»î¶¯
+		// æ£€æŸ¥çœ‹çœ‹æ˜¯å¦è®¤è¯†æ´»åŠ¨
 		PackageManager pm = getPackageManager();
 		List activities = pm.queryIntentActivities(
 
@@ -49,7 +49,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	/**
 	 * 
-	 * µã»÷¿ªÊ¼´¦ÀíÊ¶±ğ°´Å¥¡£
+	 * ç‚¹å‡»å¼€å§‹å¤„ç†è¯†åˆ«æŒ‰é’®ã€‚
 	 */
 	public void onClick(View v) {
 		if (v.getId() == R.id.btn_speak) {
@@ -59,7 +59,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	/**
 	 * 
-	 * Ïò¿ªÊ¼ÓïÒôÊ¶±ğµÄ»î¶¯¡£
+	 * å‘å¼€å§‹è¯­éŸ³è¯†åˆ«çš„æ´»åŠ¨ã€‚
 	 */
 	private void startVoiceRecognitionActivity() {
 		Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
@@ -72,13 +72,13 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	/**
 	 * 
-	 * ´¦Àí½á¹û´ÓÊ¶±ğ»î¶¯
+	 * å¤„ç†ç»“æœä»è¯†åˆ«æ´»åŠ¨
 	 */
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (requestCode == VOICE_RECOGNITION_REQUEST_CODE
 				&& resultCode == RESULT_OK) {
-			// ÌîÂúÁĞ±íÊÓÍ¼µÄ×Ö·û´®µÄ±æÈÏÈÏÎªËüÄÜÌı¼û
+			// å¡«æ»¡åˆ—è¡¨è§†å›¾çš„å­—ç¬¦ä¸²çš„è¾¨è®¤è®¤ä¸ºå®ƒèƒ½å¬è§
 			ArrayList matches = data
 					.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 			mList.setAdapter(new ArrayAdapter(this,

@@ -19,14 +19,14 @@ public class EditTextDemo extends Activity {
         
         _edittext=(EditText)findViewById(R.id.EditText01);
         _textview=(TextView)findViewById(R.id.TextView01);
-        _edittext.setHint("请输入用户名");
+        _edittext.setHint("璇疯緭鍏ョ敤鎴峰悕");
         _textview.setTextSize(20);
         
         _edittext.setOnKeyListener(new EditText.OnKeyListener(){
 			@Override
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
 				// TODO Auto-generated method stub
-				_textview.setText("编辑框里的内容是：\n"+_edittext.getText().toString());
+				_textview.setText("缂栬緫妗嗛噷鐨勫唴瀹规槸锛歕n"+_edittext.getText().toString());
 				return false;
 			}
         });

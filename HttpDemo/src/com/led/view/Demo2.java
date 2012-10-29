@@ -1,4 +1,4 @@
-package com.led.view;
+﻿package com.led.view;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-// �� Get ��ʽ�ϴ�����
+// 以Get方式上传参数
 public class Demo2 extends Activity {
 	/** Called when the activity is first created. */
 	@Override
@@ -18,42 +18,42 @@ public class Demo2 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.demo2);
 		TextView mTextView = (TextView) this.findViewById(R.id.resultGet);
-		// http ��ַ "?par=abcdefg" �������ϴ��Ĳ���
+		// http地址"?par=abcdefg"是我们上传的参数
 		String httpUrl = "http://192.168.1.150:8080/android-test-webpage/httpget.jsp?par=abcdefg";
-		// ��õ����
+		// 获得的数据
 		String resultData = "";
 		URL url = null;
 		try {
-			// ����һ�� URL ����
+			// 构造一个URL对象
 			url = new URL(httpUrl);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
 		if (url != null) {
 			try {
-				// ʹ�� HttpURLConnection ������
+				// 使用HttpURLConnection打开连接
 				HttpURLConnection urlConn = (HttpURLConnection) url
 						.openConnection();
-				// �õ���ȡ������ ( �� )
+				// 得到读取的内容（流）
 				InputStreamReader in = new InputStreamReader(
 						urlConn.getInputStream());
-				// Ϊ������� BufferedReader
+				// 为输出创建BufferedReader
 				BufferedReader buffer = new BufferedReader(in);
 				String inputLine = null;
-				// ʹ��ѭ������ȡ��õ����
+				// 使用循环来读取获得的数据
 				while (((inputLine = buffer.readLine()) != null)) {
-					// ������ÿһ�к������һ�� "\n" ������
+					// 我们在每一行后面加上一个"\n"来换行
 					resultData += inputLine + "\n";
 				}
-				// �ر� InputStreamReader
+				// 关闭InputStreamReader
 				in.close();
-				// �ر� http ����
+				// 关闭http连接
 				urlConn.disconnect();
-				// ������ʾȡ�õ�����
+				// 设置显示取得的内容
 				if (!"".equals(resultData)) {
 					mTextView.setText(resultData);
 				} else {
-					mTextView.setText(" ��ȡ������Ϊ NULL");
+					mTextView.setText(" 读取的内容未 NULL");
 				}
 			} catch (IOException e) {
 				e.printStackTrace();

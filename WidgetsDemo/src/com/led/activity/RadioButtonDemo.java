@@ -48,7 +48,7 @@ public class RadioButtonDemo extends Activity {
 	}
 
 	public void displayToast(String str) {
-		Toast toast = Toast.makeText(this, "ÄúÑ¡ÔñÁË" + str, Toast.LENGTH_LONG);
+		Toast toast = Toast.makeText(this, "æ‚¨é€‰æ‹©äº†" + str, Toast.LENGTH_LONG);
 		toast.setGravity(Gravity.TOP, 0, 300);
 		toast.show();
 	}

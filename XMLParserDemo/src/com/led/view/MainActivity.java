@@ -44,7 +44,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		try {
 			while ((is.read(buf)) != -1) {
 				sb.append(new String(buf));
-				buf = new byte[1024];// ÖØĞÂÉú³É£¬±ÜÃâºÍÉÏ´Î¶ÁÈ¡µÄÊı¾İÖØ¸´
+				buf = new byte[1024];// é‡æ–°ç”Ÿæˆï¼Œé¿å…å’Œä¸Šæ¬¡è¯»å–çš„æ•°æ®é‡å¤
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -63,7 +63,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				is = this.getClassLoader().getResourceAsStream("weather.xml");
 				Map<String, Object> weather = DomParser.ReadXmlByPull(is);
 				new AlertDialog.Builder(this)
-						.setTitle("ÊµÊ±ÌìÆø£¨DOM£©")
+						.setTitle("å®æ—¶å¤©æ°”ï¼ˆDOMï¼‰")
 						.setItems(
 								new String[] {
 										weather.get("condition").toString(),
@@ -71,7 +71,7 @@ public class MainActivity extends Activity implements OnClickListener {
 										weather.get("humidity").toString(),
 										weather.get("wind_condition")
 												.toString() }, null)
-						.setNegativeButton("È·¶¨", null).show();
+						.setNegativeButton("ç¡®å®š", null).show();
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -79,26 +79,26 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.button2:
 			try {
-				// »ñÈ¡SAX½âÎö¹¤³§
+				// è·å–SAXè§£æå·¥å‚
 				SAXParserFactory factory = SAXParserFactory.newInstance();
-				// »ñÈ¡SAX½âÎöÆ÷
+				// è·å–SAXè§£æå™¨
 				SAXParser parser = factory.newSAXParser();
-				// »ñÈ¡XML¶ÁÈ¡Æ÷¶ÔÏó
+				// è·å–XMLè¯»å–å™¨å¯¹è±¡
 				XMLReader xmlreader = parser.getXMLReader();
-				// »ñÈ¡ÌìÆø×¨ÓÃ´¦ÀíÆ÷
+				// è·å–å¤©æ°”ä¸“ç”¨å¤„ç†å™¨
 				WeatherHandler handler = new WeatherHandler();
-				// ÉèÖÃÎªÌìÆøĞÅÏ¢×¨ÓÃµÄXML¶ÁÈ¡Æ÷
+				// è®¾ç½®ä¸ºå¤©æ°”ä¿¡æ¯ä¸“ç”¨çš„XMLè¯»å–å™¨
 				xmlreader.setContentHandler(handler);
 
 				is = this.getClassLoader().getResourceAsStream("weather.xml");
-				// »ñÈ¡´ı½âÎöµÄXML¸ñÊ½ÄÚÈİ
+				// è·å–å¾…è§£æçš„XMLæ ¼å¼å†…å®¹
 				InputSource source = new InputSource(is);
-				// ¿ªÊ¼½âÎöXML
+				// å¼€å§‹è§£æXML
 				xmlreader.parse(source);
-				// »ñµÃ½âÎöºóµÄÉÌÆ·ÁĞ
+				// è·å¾—è§£æåçš„å•†å“åˆ—
 				Map<String, Object> weather = handler.getWeather();
 				new AlertDialog.Builder(this)
-						.setTitle("ÊµÊ±ÌìÆø£¨SAX£©")
+						.setTitle("å®æ—¶å¤©æ°”ï¼ˆSAXï¼‰")
 						.setItems(
 								new String[] {
 										weather.get("condition").toString(),
@@ -106,7 +106,7 @@ public class MainActivity extends Activity implements OnClickListener {
 										weather.get("humidity").toString(),
 										weather.get("wind_condition")
 												.toString() }, null)
-						.setNegativeButton("È·¶¨", null).show();
+						.setNegativeButton("ç¡®å®š", null).show();
 			} catch (ParserConfigurationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
