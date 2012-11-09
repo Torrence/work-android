@@ -20,19 +20,19 @@
                    
                  
                  <!-- 下面是三个图片按钮了，看效果图就知道是哪三个按钮了 -->
-         <ImageButton  android:background="@drawable/maptitlebtn"  android:layout_marginLeft="15dp"
-			 android:id="@+id/pointwhat"  android:src="@drawable/pointwhat"
-			 android:layout_width="wrap_content"
-			 android:layout_height="wrap_content"
-			/>
+<!--          <ImageButton  android:background="@drawable/maptitlebtn"  android:layout_marginLeft="15dp" -->
+<!-- 			 android:id="@+id/pointwhat"  android:src="@drawable/pointwhat" -->
+<!-- 			 android:layout_width="wrap_content" -->
+<!-- 			 android:layout_height="wrap_content" -->
+<!-- 			/> -->
 			
-			<ImageButton  android:background="@drawable/maptitlebtn"  android:layout_marginLeft="5dp"
+			<ImageButton  android:background="@drawable/maptitlebtn"  android:layout_marginLeft="65dp"
 			 android:id="@+id/layer"  android:src="@drawable/layer"
 			 android:layout_width="wrap_content"
 			 android:layout_height="wrap_content"
 			/>
 			
-			 <ImageButton  android:background="@drawable/maptitlebtn" android:layout_marginLeft="5dp"
+			 <ImageButton  android:background="@drawable/maptitlebtn" android:layout_marginLeft="1dp"
 			 android:id="@+id/loction"  android:src="@drawable/loction"
 			 android:layout_width="wrap_content"
 			 android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
 			  android:layout_height="fill_parent"
 			  android:clickable="true" 
 			  android:enabled="true" 
-			  android:apiKey="0OMuEpRjEIkc3seG5zZYgFgaG3IitvqwxRt8JAA" />
+			  android:apiKey="0OMuEpRjEIkfzJrw54JHjbGDkctZGK1cBMnfWmA" />
 		</TableRow>
 		
 		<TableRow>
