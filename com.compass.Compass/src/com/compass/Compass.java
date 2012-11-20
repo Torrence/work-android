@@ -13,6 +13,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.hardware.Sensor;
 import android.hardware.SensorListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
@@ -33,7 +34,7 @@ public class Compass extends Activity {
    private final SensorListener mListener = new SensorListener() {
    
        public void onSensorChanged(int sensor, float[] values) {
-           if (Config.LOGD) Log.d(TAG, "sensorChanged (" + values[0] + ", " + values[1] + ", " + values[2] + ")");
+           Log.d(TAG, "sensorChanged (" + values[0] + ", " + values[1] + ", " + values[2] + ")");
            mValues = values;
            if (mView != null) {
                mView.invalidate();
@@ -61,6 +62,12 @@ public class Compass extends Activity {
    protected void onCreate(Bundle icicle) {
        super.onCreate(icicle);
        mSensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
+       
+       Sensor mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
+       if (mSensor != null) {
+    	   Log.d("lm", "Compass sensor not null");
+       }
+       
        mView = new SampleView(this);
        setContentView(mView);
        File a = new File("/sdcard/");
@@ -76,7 +83,7 @@ public class Compass extends Activity {
    @Override
    protected void onResume()
    {
-       if (Config.LOGD) Log.d(TAG, "onResume");
+       Log.d(TAG, "onResume");
        super.onResume();
        mSensorManager.registerListener(mListener, 
        		SensorManager.SENSOR_ORIENTATION,
