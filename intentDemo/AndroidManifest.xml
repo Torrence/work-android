@@ -21,8 +21,7 @@
             </intent-filter>
         </activity>
         
-        <activity
-            android:name=".TargetActivity">
+        <activity android:name=".TargetActivity">
             <intent-filter >
                 <action android:name="com.scott.intent.action.TARGET"/>
                 <category android:name="android.intent.category.DEFAULT" />
